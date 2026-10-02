@@ -257,6 +257,18 @@ footer .sig{color:var(--ink);font-weight:500;margin-bottom:6px;}
   .cov{font-size:.9rem;}
 }
 @media print{.opt{display:none!important;}}
+
+/* --- ubicación + links --- */
+.loc{margin-top:28px;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;}
+.loc__map{display:block;width:100%;aspect-ratio:16/10;border:0;background:var(--arena);}
+.loc__body{padding:20px 22px 24px;}
+.loc__body h3{font-size:1.2rem;margin-bottom:4px;}
+.loc__addr{font-size:.92rem;color:var(--ink-soft);margin-bottom:16px;}
+.loc__btns{display:flex;flex-wrap:wrap;gap:10px;}
+.btn-o{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 20px;border:1.5px solid var(--terracota);border-radius:999px;color:var(--terracota);font-weight:600;font-size:.88rem;text-decoration:none;background:transparent;}
+.btn-o:hover,.btn-o:focus-visible{background:var(--terracota);color:#fff;}
+@media(max-width:640px){.loc__map{aspect-ratio:4/3;}.loc__body{padding:18px 18px 22px;}.btn-o{flex:1 1 100%;}}
+@media print{.loc__map{display:none;}}
 </style>
 <noscript><style>
 .panel{display:block;position:static;max-height:none;width:auto;margin:2rem auto;}
@@ -308,7 +320,7 @@ footer .sig{color:var(--ink);font-weight:500;margin-bottom:6px;}
     <p class="sec-lede">Combiné Natal, con su ritmo de playa y servicios de resort, y Pipa, más tranquila y rodeada de verde. Así la familia vive dos estilos de vacaciones sin tener que organizar nada: vuelos, traslados y alojamiento van en un solo valor.</p>
     <div class="values">
       <div class="val"><i>🏖️</i><h3>Salida a la playa en Natal</h3><p>El Rifoles tiene salida a la playa de Ponta Negra y sus propias piletas, con una zona de poca profundidad para los chicos.</p></div>
-      <div class="val"><i>🌴</i><h3>Pipa, a tu ritmo</h3><p>El Sun Bay está a 5 minutos caminando del centro de Pipa y a unos 10 de la playa, con jardín, pileta y hamacas para bajar un cambio.</p></div>
+      <div class="val"><i>🌴</i><h3>Pipa, a tu ritmo</h3><p>El Sun Bay está sobre la avenida Baía dos Golfinhos, cerca del centro de Pipa y de sus playas, con jardín, pileta y hamacas para bajar un cambio.</p></div>
       <div class="val"><i>🧳</i><h3>Todo resuelto</h3><p>Vuelos de ida y vuelta, traslados en Natal y Pipa, y diez noches de alojamiento con desayuno todos los días.</p></div>
     </div>
     <div class="review"><b>Lo que cuentan quienes ya se hospedaron:</b> en el Rifoles destacan la amabilidad del personal y la limpieza; lo valoran con 8,1 sobre 10 en Booking.com. En el Sun Bay destacan el desayuno y la ubicación, con 8,4 sobre 10.</div>
@@ -435,6 +447,17 @@ footer .sig{color:var(--ink);font-weight:500;margin-bottom:6px;}
       </ul>
       <div class="carousel__progress" aria-hidden="true"><span class="carousel__progress-thumb"></span></div>
     </div>
+    <div class="loc">
+      <iframe class="loc__map" src="https://www.google.com/maps?q=Rif%C3%B3les+Praia+Hotel+e+Resort%2C+Rua+Coronel+In%C3%A1cio+Vale%2C+8847%2C+Praia+de+Ponta+Negra%2C+Natal%2C+RN%2C+Brasil&output=embed&hl=es" title="Mapa con la ubicación del Rifóles Praia Hotel en Ponta Negra, Natal" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <div class="loc__body">
+        <h3>Dónde queda</h3>
+        <p class="loc__addr">Rua Coronel Inácio Vale, 8847, Praia de Ponta Negra, Natal, RN, Brasil</p>
+        <div class="loc__btns">
+          <a class="btn-o" href="https://www.google.com/maps/search/?api=1&query=Rif%C3%B3les+Praia+Hotel+e+Resort%2C+Rua+Coronel+In%C3%A1cio+Vale%2C+8847%2C+Praia+de+Ponta+Negra%2C+Natal%2C+RN%2C+Brasil" target="_blank" rel="noopener">Abrir en Google Maps</a>
+          <a class="btn-o" href="https://www.rifoles.com.br/" target="_blank" rel="noopener">Sitio web del hotel</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -499,6 +522,17 @@ footer .sig{color:var(--ink);font-weight:500;margin-bottom:6px;}
         </li>
       </ul>
       <div class="carousel__progress" aria-hidden="true"><span class="carousel__progress-thumb"></span></div>
+    </div>
+    <div class="loc">
+      <iframe class="loc__map" src="https://www.google.com/maps?q=Sun+Bay+Hot%C3%A9is+Pipa%2C+Av.+Ba%C3%ADa+dos+Golfinhos%2C+125%2C+Praia+da+Pipa%2C+Tibau+do+Sul%2C+RN%2C+Brasil&output=embed&hl=es" title="Mapa con la ubicación del Sun Bay Pipa Hotéis en Pipa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <div class="loc__body">
+        <h3>Dónde queda</h3>
+        <p class="loc__addr">Av. Baía dos Golfinhos, 125, Praia da Pipa, Tibau do Sul, RN, Brasil</p>
+        <div class="loc__btns">
+          <a class="btn-o" href="https://www.google.com/maps/search/?api=1&query=Sun+Bay+Hot%C3%A9is+Pipa%2C+Av.+Ba%C3%ADa+dos+Golfinhos%2C+125%2C+Praia+da+Pipa%2C+Tibau+do+Sul%2C+RN%2C+Brasil" target="_blank" rel="noopener">Abrir en Google Maps</a>
+          <a class="btn-o" href="https://sunbay.com.br/" target="_blank" rel="noopener">Sitio web del hotel</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -792,7 +826,7 @@ footer .sig{color:var(--ink);font-weight:500;margin-bottom:6px;}
     <header class="panel__head reveal">
       <p class="eyebrow">Alojamiento · Pipa</p>
       <h2 class="panel__title" id="panel-p-hotel-title">Sun Bay Pipa Hotéis</h2>
-      <p class="panel__lede">Un hotel de 4 estrellas en Pipa, a 5 minutos caminando del centro y a unos 10 de la playa. Tiene pileta al aire libre rodeada de jardín, restaurante, bar y recepción las 24 horas.</p>
+      <p class="panel__lede">Un hotel de 4 estrellas en Pipa, sobre la avenida Baía dos Golfinhos, cerca del centro y de las playas. Tiene pileta al aire libre rodeada de jardín, restaurante, bar y recepción las 24 horas.</p>
     </header>
     <div class="panel__facts reveal">
       <span class="chip">4 estrellas</span><span class="chip">Recepción 24 hs</span><span class="chip">WiFi gratis</span><span class="chip">Pileta al aire libre</span><span class="chip">Jardín y terraza</span><span class="chip">Estacionamiento gratis</span><span class="chip">Aire acondicionado</span>
