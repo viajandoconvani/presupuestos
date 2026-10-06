@@ -293,6 +293,13 @@ section[id^="opcion-"]{scroll-margin-top:12px;}
   .cta__btns .wa{width:100%;justify-content:center;}
 }
 @media print{.cmp .btn-o{display:none!important;}}
+.rvs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.rv{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;border-left:4px solid var(--salvia);}
+.rv__q{font-family:var(--font-display);font-size:2.2rem;line-height:.6;color:var(--rosa);display:block;margin-bottom:6px;}
+.rv p{font-size:.94rem;color:var(--ink);}
+.rv__src{margin-top:12px;font-size:.78rem;color:var(--ink-soft);}
+@media(max-width:640px){.rvs{grid-template-columns:1fr;}}
+
 </style>
 <noscript><style>
 .panel{display:block;position:static;max-height:none;width:auto;margin:2rem auto;}
@@ -489,6 +496,10 @@ section[id^="opcion-"]{scroll-margin-top:12px;}
       </div>
     </div>
 
+    <h3 class="sub-title" style="margin-top:44px">Lo que dicen los huéspedes</h3>
+    <p class="sub-lede">En Tripadvisor y Google, el alojamiento tiene 4,3 y 4,2 sobre 5. Esto es lo que más destacan quienes se hospedaron.</p>
+    <div class="rvs"><div class="rv"><span class="rv__q" aria-hidden="true">“</span><p>Los apartamentos son amplios, limpios y con vista a la pileta.</p></div><div class="rv"><span class="rv__q" aria-hidden="true">“</span><p>Destacan la atención del personal: amables, atentos y dispuestos a ayudar, incluso con llegadas tarde.</p></div><div class="rv"><span class="rv__q" aria-hidden="true">“</span><p>La pileta con cascada y el jacuzzi son de lo que más disfrutan, y hay supermercados a pocos minutos a pie.</p></div></div>
+    <p class="rv__src">Opiniones de huéspedes publicadas en Tripadvisor, Expedia y Google, resumidas con mis palabras. Puntajes según el sitio del alojamiento.</p>
     <h3 class="sub-title" style="margin-top:44px">Inversión · Opción 1</h3>
     <p class="sub-lede">Vuelos, traslados y ocho noches de alojamiento, en dólares y por persona.</p>
     <div class="price-card">
@@ -618,6 +629,10 @@ section[id^="opcion-"]{scroll-margin-top:12px;}
       </div>
     </div>
 
+    <h3 class="sub-title" style="margin-top:44px">Lo que dicen los huéspedes</h3>
+    <p class="sub-lede">En Hoteles.com tiene 9,6 sobre 10, calificación “Excepcional”, con 9 opiniones de huéspedes.</p>
+    <div class="rvs"><div class="rv"><span class="rv__q" aria-hidden="true">“</span><p>Lo describen como un lugar muy limpio y espacioso, con una pileta y un jacuzzi que valoran mucho.</p></div><div class="rv"><span class="rv__q" aria-hidden="true">“</span><p>Destacan al anfitrión: responde rápido y da buenas recomendaciones de dónde comer y qué hacer.</p></div><div class="rv"><span class="rv__q" aria-hidden="true">“</span><p>Valoran la parrilla para cocinar al aire libre y que queda cerca de supermercados y de las playas.</p></div></div>
+    <p class="rv__src">Opiniones verificadas de huéspedes en Hoteles.com, resumidas con mis palabras.</p>
     <h3 class="sub-title" style="margin-top:44px">Inversión · Opción 2</h3>
     <p class="sub-lede">Vuelos, traslados y nueve noches de alojamiento, en dólares y por persona.</p>
     <div class="price-card">
